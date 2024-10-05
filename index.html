@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .forceAlign{
+            label {
+    display: inline-block;
+    width: 120px; /* Adjust width as needed */
+    text-align: right;
+    margin-right: 10px;
+  }
+        }
+    </style>
+    <title>DCC Character Sheet</title>
+</head>
+<body>
+
+    <h1>DCC Character Sheet</h1>
+    <form>
+        <label for="name">Character Name</label>
+        <input type="text" id="name" name="name">
+
+        <br><br>
+
+        <label for="ac">Armor Class</label>
+        <input type="number" id="ac" name="ac" placeholder="12">
+        <label for="hp">Hit Points</label>
+        <input type="number" id="hp" name="hp" placeholder="1">
+
+        <br><br>
+
+        <label for="occupation">Occupation</label>
+        <input type="text" name="occupation" id="occupation">
+        <br><br>
+        <label for="speed">Speed</label>
+        <input type="number" id="speed" name="speed" placeholder="30">
+        <label for="initiative">Initiative</label>
+        <input type="number" id="initiative" name="initiative" placeholder="1">
+        <br><br>
+        <label  for="xp">XP</label>
+        <input type="number" id="xp" name="xp" placeholder="0">
+
+        <p>Alignment</p>
+        <input type="radio" name="alignment1" value="Law">
+        <label for="alignment1">Law</label>
+        <input type="radio" name="alignment2" value="Neutral">
+        <label for="alignment2">Neutral</label>
+        <input type="radio" name="alignment3" value="Chaos">
+        <label for="alignment3">Chaos</label>
+
+        <br><br>
+
+    <div class="forceAlign">
+        <h2>Abilities</h2>
+        <label for ="strengthPoints">Strength   </label>
+        <input  type="number" id="strengthPoints" name="strengthPoints" placeholder="10">
+        <br>
+        <label for ="agilityPoints">Agility </label>
+        <input  type="number" id="agilityPoints" name="agilityPoints" placeholder="10">
+        <br>
+        <label for ="staminaPoints">Stamina </label>
+        <input  type="number" id="staminaPoints" name="staminaPoints" placeholder="10">
+        <br>
+        <label for ="personalityPoints">Personality </label>
+        <input  type="number" id="personalityPoints" name="personalityPoints" placeholder="10">
+        <br>
+        <label for ="intelligencePoints">Intelligence </label>
+        <input  type="number" id="intelligencePoints" name="intelligencePoints" placeholder="10">
+        <br>
+        <label for ="luckPoints">Luck </label>
+        <input  type="number" id="luckPoints" name="luckPoints" placeholder="10">
+        <br><br>
+    </div>
+
+    <div class="forceAlign">
+        <h2>Saves</h2>
+        <label for ="reflexSave">Reflex </label>
+        <input  type="number" id="reflexSave" name="reflexSave" placeholder="10">
+        <br>
+        <label for ="fortitudeSave">Fortitude </label>
+        <input  type="number" id="fortitudeSave" name="fortitudeSave" placeholder="10">
+        <br>
+        <label for ="willSave">Will </label>
+        <input  type="number" id="willSave" name="willSave" placeholder="10">
+    </div>
+    
+    <div>
+        <br><br>
+        <label for="weapons">Weapons</label><br>
+        <textarea name="weapons" id="weapons" cols="30" rows="3" placeholder="Dagger -1 (1d4-1)"></textarea>
+        <br><br>
+        <label for="equipment">Equipment</label><br>
+        <textarea name="equipment" id="equipment" cols="50" rows="10" placeholder="Starting Funds: 20 cp"></textarea>
+    </div>
+    <div>
+        <label for="notes">Notes</label><br>
+        <textarea name="notes" id="notes" cols="50" rows="10" placeholder="Lucky sign, languages, abilities, etc."></textarea>
+    </div>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+<footer>
+    <p>Dungeon Crawl Classics and DCC RPG are trademarks of Goodman Games. For Additional information, visit <a href="https://www.goodman-games.com">www.goodman-games.com.</a></p>
+    <p>This is simply a fan made site used for the purpose of practicing website creation.</p>
+</footer>
+</body>
+</html>
